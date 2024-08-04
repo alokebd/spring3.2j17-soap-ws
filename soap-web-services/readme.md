@@ -46,7 +46,7 @@
 ## Creare WSDL by using following URL in Chrome Browser
 
 - http://localhost:2028/ws/courses.wsdl
-- Save the WSDL and configure with SOAPUI for thesting 
+- Save the WSDL and configure with SOAPUI for testing.
 
 ## Security Dependencies (TODO)
 
