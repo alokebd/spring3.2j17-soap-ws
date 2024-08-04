@@ -1,25 +1,15 @@
-# SOAP Web Services with Spring boot
+# SOAP Web Services with Spring boot 3.2.1
 - Project: Maven
 - Application Framework: Spring Boot (3.2.1)
 - Language: Java (17)
 - Packaging: Jar
-- Dependencies: Spring Web, Spring Devtools, jaxb2, wsdl4j.
+- Dependencies: Spring Web, Spring Devtools, jaxb2, wsdl4j, JPA, MySQL.
 
 ## The PoC provides following
 
-- What is a SOAP Web Service?
-- What is WSDL (Web Service Definition Language)? 
-- What is SOAP Header, SOAP Body and SOAP Fault?
-- What is an XSD (XML Schema Definition)? 
-- How to write an XSD for your requests and responses?
-- What is JAXB (Java API for XML Binding)?
-- What is an Endpoint?
-- What is a Contract First approach?
-- What are the different steps in building SOAP Web Services with Spring Web Services & Spring Boot?
-- How to build different SOAP Web services for GetCourseDetailsRequest, GetAllCourseDetailsRequest and DeleteCourseDetailsRequest? 
-- How to use Wizdler to execute SOAP Requests?
-- How to implement exception handling for SOAP Web Services?
-- How to implement basic security with WS Security for SOAP Web Services?
+- What is SOAP Header, SOAP Body and SOAP Fault
+- Endpoins for SOAP WS are GetCourseDetailsRequest, GetAllCourseDetailsRequest and DeleteCourseDetailsRequest? 
+- Implement basic security with WS Security for SOAP Web Services (TODO).
 
 
 ## Steps
@@ -35,18 +25,17 @@
 - Step 09 - Spring Web Services Configuration - Message Dispatcher Servlet
 - Step 10 - Spring Web Services Configuration - Generating WSDL
 - Step 11 - Using Wizdler to execute SOAP Requests
-- Step 12 - Implementing a service - Course Details Service - backend with in memory array list
+- Step 12 - Implementing a service - Course Details Service - backend MySQL (auto sql for test data) and JPA.
 - Step 13 - Implementing SOAP Web Service for GetAllCourseDetailsRequest
-- Step 14 - Quick introduction to different parts of a WSDL
 - Step 15 - Implementing SOAP Web Service for DeleteCourseDetailsRequest
-- Step 16 - Improving the DeleteCourseDetailsRequest - Using an Enum for Status
+- Step 16 - DeleteCourseDetailsRequest - Using an Enum for Status
 - Step 17 - Exception Handling and SOAP Fault Responses
-- Step 18 - Implementing Security for SOAP Web Services with WS Security
+- Step 18 - Implementing Security for SOAP Web Services with WS Security (TODO)
 
 ## Creare WSDL by using following URL in Chrome Browser
 
 - http://localhost:2028/ws/courses.wsdl
-- Save the WSDL and configure with SOAPUI for testing.
+- Save the WSDL and configure with SOAPUI for testing. 
 
 ## Security Dependencies (TODO)
 
@@ -98,7 +87,7 @@ xmlns:xwss="http://java.sun.com/xml/ns/xwss/config">
 ## Error
 java.lang.NoClassDefFoundError: jakarta/wsdl/extensions/ExtensibilityElement
 
-## Security with WS-Security
+## Security with WS-Security (TODO)
  - Authentication
  - Digital signatures
  - Certificates
